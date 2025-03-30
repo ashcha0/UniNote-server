@@ -1,12 +1,19 @@
-# 项目技术栈与使用说明
+# UniNote后端项目技术栈与使用说明
 
 ## 技术栈
-- Spring Boot 2.x
+- Spring Boot 2.7.0
 - Maven 3.x
 - Java 17
 - Lombok
-- Hibernate/JPA
-- MySQL 5.7+/PostgreSQL
+- Spring Data JPA
+- MySQL 8.0+
+- Jackson 2.13.0
+
+## 主要依赖
+- spring-boot-starter-web
+- spring-boot-starter-data-jpa
+- mysql-connector-java
+- jackson-databind
 
 ## 环境要求
 - JDK 11+
@@ -35,6 +42,9 @@ spring.datasource.password=your_password
 - 端口冲突: 修改`server.port`属性
 - 数据库连接失败: 检查数据库服务是否运行
 - Lombok注解无效: 确保IDE安装了Lombok插件
+
+## API文档
+详细API文档请参考[API_DOCUMENTATION.md](API_DOCUMENTATION.md)
 
 ## API测试示例
 使用PowerShell测试POST请求:
