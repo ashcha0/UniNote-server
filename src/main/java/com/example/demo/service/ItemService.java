@@ -17,6 +17,8 @@ public class ItemService {
     }
 
     public Item saveItem(Item item) {
+        // 设置创建时间为当前时间
+        item.setCreateTime(java.time.LocalDateTime.now());
         return itemRepository.save(item);
     }
 
